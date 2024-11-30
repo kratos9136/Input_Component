@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Shared Input Component</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h2>Form with Shared Input Component</h2>
+
+<div id="formContainer">
+  <form id="sharedForm">
+    <!-- Shared Input Components -->
+    <div id="formElements">
+      <div data-type="text" data-label="Name" data-placeholder="Enter your name"></div>
+      <div data-type="textarea" data-label="Message" data-placeholder="Enter your message"></div>
+      <div data-type="checkbox" data-label="Subscribe" data-name="subscribe"></div>
+      <div data-type="radio" data-label="Gender" data-options='["Male", "Female"]' data-name="gender"></div>
+    </div>
+
+    <button type="submit">Submit</button>
+  </form>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
